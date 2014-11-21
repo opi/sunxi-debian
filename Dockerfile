@@ -3,7 +3,7 @@ FROM debian:stable
 MAINTAINER Émile_morel
 
 # U-boot part 
-RUN echo deb http://www.emdebian.org/debian unstable main > /etc/apt/sources.list.d/emdebian.list
+RUN echo deb http://ftp.uk.debian.org/emdebian/toolchains unstable main > /etc/apt/sources.list.d/emdebian.list
 ENV DEBIAN_FRONTEND noninteractive 
 ENV DEBCONF_NONINTERACTIVE_SEEN true 
 ENV LC_ALL C 
